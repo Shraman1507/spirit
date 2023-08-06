@@ -1,0 +1,136 @@
+.header.two{
+    height: 9vh;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4vh;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    margin-top: -0.69vh;
+    background-color: rgb(181, 255, 70);
+}
+.sports{
+    width: 19vw;
+    border: 1px solid black;
+    margin-left: -0.8vw;
+    height: 100%;
+    background-color: black;
+    
+}
+.input{
+    display: flex;
+    margin-top: 1.5vh;
+    justify-content: center;
+}
+.input input{
+    height: 4vh;
+    width: 12vw;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat ;
+    background-size: 2.2vh ;
+    background-position: 5vh 0.775vh;
+    text-indent: 1vh;
+  
+}
+
+.searchicon{
+    height: 2vh;
+    width: 2vh;
+}
+.list{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 1vh;
+}
+.list div{
+    margin-left: 0.8vw;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+.image{
+    height: 2vh;
+    width: 2vh;
+}
+
+.body.eventpage{
+    display: flex;
+    height: 100%;
+}
+.sportinfo{
+    height: fit-content;
+    width: 70%;
+    display: inline-block;
+}
+.sportinfo .sportname{
+    margin-top: 5vh;
+    margin-left: 10vw;
+    font-size: 5rem;
+    font-family: Garamond;
+    font-style: italic;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6vh;
+}
+.cards div{
+    height: 42vh;
+    width: 20vw;
+    border: 1px solid black;
+}
+.input:hover{
+    transform: scale(1.15);
+}
+
+.basket:hover{
+   transform: scale(1.15);
+   position: relative;
+   left: 1vw;
+
+
+}
+@media screen and (max-width: 1678px){
+    .cards div{
+        width: 23vw;
+    }
+}
+@media screen and (max-width: 1395px){
+    .sports{
+        width: 25vw;
+    }
+    .cards{
+        flex-flow: column;
+        align-items: center;
+    }
+    .cards div{
+        height: 39vh;
+        margin-top: 2vh;
+        width: 30vw;
+    }
+    .input input{
+        width: 20vw;;
+    }
+}
+@media screen and (max-width: 1065px){
+    .cards div{
+        width:  40vw;
+    }
+}
+@media screen and (max-height: 850px){
+    .cards div{
+       display: none;
+    }
+}
